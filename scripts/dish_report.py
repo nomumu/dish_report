@@ -26,6 +26,7 @@ class dish_reporter:
         self.image_gsigma = 33
         # 検出した円形領域の拡縮用変数 
         self.check_cutback = 0
+        # 白とみなす明るさのしきい値(照明やお皿の色、カメラ性能によって調整が必要)
         self.white_threshold = 100
 
     def avgColor(self, pa, pb, pc, pd ):
